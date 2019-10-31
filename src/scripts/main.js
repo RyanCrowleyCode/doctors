@@ -24,3 +24,16 @@ console.log(dave.address)
 // Pet name
 // Pet breed
 // Invoke the factory function 3 times and place each animal in an array stored in a variable named BowWowKennels
+
+const pet = (name, breed) => ({
+    "name": name,
+    "breed": breed
+})
+
+const scruffyPuppy = pet("Scruffy Puppy", "Fictional")
+const clifford = pet("Clifford", "Big Red")
+const scooby = pet("Scooby Dooby Doo", "Munchies")
+
+const BowWowKennels = [scruffyPuppy, clifford, scruffyPuppy]
+
+console.log(BowWowKennels)
